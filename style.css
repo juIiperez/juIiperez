@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background: #e3e3e3;
+    color: #000;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 150px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Fjalla One', sans-serif;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #28b06a;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.home-text{
+    margin-top: 15%;
+    font-size: 30px;
+}
+
+.home-text h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 70px;
+}
+
+.home-text p{
+    font-size: 20px;
+}
+
+#about{
+    padding: 80px 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about1{
+    flex-basis: 35%;
+}
+
+.about1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about2{
+    flex-basis: 58%;
+}
+
+.about2 h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+}
+
+#socials{
+    padding: 100px 0 100px;
+    background: #000;
+    position: relative;
+    color: #fff;
+}
+
+.social-links{
+    flex-basis: 50%;
+}
+
+#socials h1{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 50px;
+    color: #fff;
+}
+
+.social-links p{
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.social-links p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-links p a i{
+    color: #28b06a;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.aus p{
+    text-align: right;
+}
+
+.aus p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.aus p a i{
+    color: #28b06a;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons i{
+    font-size: 30px;
+    color: #ababab;
+    margin-right: 15px;
+    text-decoration: none;
+    display: inline-block;
+    transition: translate 0.5s;
+}
+
+.social-icons i:hover{
+    color: #28b06a;
+    transform: translateY(-5px);
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #home{
+        background-image: url(images/phone-background.png);
+    }
+    .home-text{
+        margin-top: 100%;
+    }
+    .home-text h1{
+        font-size: 44px;
+    }
+    .home-text p{
+        font-size: 15px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+    nav ul{
+        background: #28b06a;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+        color: #fff;
+    }
+    .about2 h1{
+        font-size: 40px;
+    }
+    .about1, .about2{
+        flex-basis: 100%;
+    }
+    .about1{
+        margin-bottom: 30px;
+    }
+    .about2{
+        font-size: 15px;
+    }
+    .social-links, .aus{
+        flex-basis: 100%;
+    }
+    #socials h1{
+        font-size: 40px;
+    }
+    .social-links{
+        margin-bottom: 30px;
+    }
+    .aus h1{
+        text-align: right;
+    }
+}

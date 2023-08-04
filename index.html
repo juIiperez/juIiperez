@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Juliana (@juIiperez)</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="short icon" type="x-icon" href="images/icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    </head>
+
+    <body>
+        <div id="home">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT ME</a></li>
+                        <li><a href="#socials">SOCIALS</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="home-text">
+                    <p>AU Character (RP)</p>
+                    <h1>Juliana Perez</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about1">
+                        <img src="images/user.png" class="user">
+                    </div>
+                    <div class="about2">
+                        <h1>ABOUT ME</h1>
+                        <p>I'm Juliana Perez, an AU character of The Songs I Wrote For You, 
+                            written by Author Tris (@myouischaeng). You can call me Juliana, 
+                            Juli, Juls, Jul, or you can call me yours. I like playing minecraft,
+                            watching fantasy movies, and reading angst, especially yung anak mo po, Tita.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="socials">
+            <div class="container">
+                <div class="row">
+                    <div class="social-links">
+                        <h1>SOCIALS</h1>
+                        <p><a href="https://twitter.com/juiiperez" target="_blank"><i class="fa-brands fa-twitter"></i>Juliana Perez</a></p>
+                        <p><a href="https://twitter.com/myouischaeng" target="_blank"><i class="fa-brands fa-twitter"></i>Author Tris</a></p>
+                        <div class="social-icons"> 
+                            <a href="https://telegram.me/tsiwfybarda" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="https://www.instagram.com/julsperezd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://discord.gg/a63MqK2X8Y" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                            <a href="https://open.spotify.com/user/g3faddetwqzxcqw5k4u5crx7h?si=f4fdb55fe749454e" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                            <a href="https://www.threads.net/@julsperezd" target="_blank"><i class="fa-brands fa-threads"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="aus">
+                        <h1>AUTHOR TRIS' AUS</h1>
+                        <p><a href="https://twitter.com/myouischaeng/status/1298841353321771008?s=20" target="_blank">TWISFY<i class="fa-brands fa-twitter"></i></a></p>
+                        <p><a href="https://twitter.com/myouischaeng/status/1344131139737284608?s=20" target="_blank">ISYIWA<i class="fa-brands fa-twitter"></i></a></p>
+                        <p><a href="https://twitter.com/myouischaeng/status/1409508338711240716?s=20" target="_blank">BTC<i class="fa-brands fa-twitter"></i></a></p>
+                        <p><a href="https://twitter.com/myouischaeng/status/1514944162889490441?s=20" target="_blank">HTBAC<i class="fa-brands fa-twitter"></i></a></p>
+                        <p><a href="https://twitter.com/myouischaeng/status/1639599560946491393?s=20" target="_blank">HS<i class="fa-brands fa-twitter"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu")
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px"
+            }
+
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 500,
+                speedAsDuration: true
+            });
+        </script>
+    </body>
+</html>
